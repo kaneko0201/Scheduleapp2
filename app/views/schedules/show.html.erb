@@ -1,0 +1,31 @@
+<h2>詳細</h2>
+
+<table class = "table table-secondary" >
+  <tr>
+    <th>タイトル</th>
+    <td><%= @schedule.title %></td>
+  </tr>
+  <tr>
+    <th>開始日</th>
+    <td><%= @schedule.startDate %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @schedule.endDate%></td>
+  </tr>
+  <tr>
+    <th>終日</th>
+    <td><%= @schedule.allDay %></td>
+  </tr>
+  <tr>
+    <th>スケジュールメモ</th>
+    <td><%= @schedule.memo %></td>
+  </tr>
+</table>
+
+<div class = "rightSide">
+  <ul>
+    <li><%= link_to "編集", [:edit_schedule], class: 'btn btn-primary' %></li>
+    <li><%= link_to "一覧に戻る", :schedules, class: 'btn btn-outline-dark' %></li>
+  </ul>
+</div>

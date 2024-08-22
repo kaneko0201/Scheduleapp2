@@ -1,0 +1,17 @@
+@import "bootstrap";
+@import "~bootswatch/dist/pulse/bootstrap";
+
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+  text-align:center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display:inline-block;
+  margin-right: 3px;
+}
